@@ -1,0 +1,15 @@
+<resources>
+
+    <!-- Base application theme, gets rid of the action bar so that we can
+    make a new app bar. -->
+    <!-- the light theme gives dark text color(black) so change theme in
+    tool bar to dark for white to apply at text-->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!--the color primary is the tool bar color-->
+        <item name="colorPrimary">@color/primary</item>
+        <!--the color primary dark is the status bar color-->
+        <item name="colorPrimaryDark">@color/primary_dark</item>
+        <!-- Customize your theme here. -->
+    </style>
+
+</resources>

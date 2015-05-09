@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- this tool bar can be used through out the app
+so we have created a separate tool bar--><!--we have set the color of tool bar to primary
+    color in colors.xml the primary color dark is for
+    status bar--><!--the elevation property is for creating a
+    shadow effect--><!-- the theme property applies dark theme
+    thereby enabling light color for text (white)
+    the main theme already specified with light
+    (dark text), we just want the text on the
+    toolbar to be whitex so dark theme-->
+<android.support.v7.widget.Toolbar
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/primary"
+    android:elevation="@dimen/elevationToolBar"
+    android:theme="@style/ThemeOverlay.AppCompat.Dark">
+
+</android.support.v7.widget.Toolbar>
