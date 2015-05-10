@@ -1,16 +1,51 @@
-<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
-    xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
+
+<android.support.v4.widget.DrawerLayout
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    android:layout_width="match_parent"
+    android:id="@+id/mainDrawer"
+    android:elevation="@dimen/elevationNavDrawer"
+    android:fitsSystemWindows="true"
+    xmlns:android="http://schemas.android.com/apk/res/android">
 
-    <!-- include the tool bar here-->
-    <include android:id="@+id/tool_bar"
-        layout="@layout/tool_bar"
-        ></include>
-    <TextView
-        android:text="@string/hello_world"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content" />
+    <!-- the drawer should slide over the app bar so we enclose everything in
+    this drawer layout-->
 
-</RelativeLayout>
+    <!-- there will be two children views for the drawer layout-->
+
+    <!-- the first child is the main content-->
+    <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        tools:context=".MainActivity">
+
+        <!-- include the tool bar here-->
+        <include
+            android:id="@+id/tool_bar"
+            layout="@layout/tool_bar"></include>
+
+    </LinearLayout>
+
+    <!-- the second child view consists of the recycler view which has the
+    content of the sliding drawer-->
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerView"
+        android:layout_gravity="left"
+        android:background="#ffffff"
+        android:scrollbars="vertical">
+
+        </android.support.v7.widget.RecyclerView>
+    <android.support.v7.widget.RecyclerView
+        android:layout_width="320dp"
+        android:layout_height="match_parent"
+        android:id="@+id/recyclerViewRight"
+        android:layout_gravity="right"
+        android:background="#ffffff"
+        android:scrollbars="vertical">
+
+    </android.support.v7.widget.RecyclerView>
+
+</android.support.v4.widget.DrawerLayout>

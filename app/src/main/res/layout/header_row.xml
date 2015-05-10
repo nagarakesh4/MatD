@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+
+    android:layout_width="match_parent"
+    android:layout_height="178dp"
+    android:background="@drawable/ic_profile_bg"
+    android:orientation="vertical"
+    android:weightSum="100000">
+
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="56dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:textColor="#ffffff"
+            android:text="Venkata Mani Naga Rakesh"
+            android:textSize="14sp"
+            android:textStyle="bold"
+            android:id="@+id/headerName" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textColor="#fff"
+            android:layout_marginLeft="16dp"
+            android:layout_marginTop="5dp"
+            android:id="@+id/headerEmail"
+            android:text="nagarakesh4@gmail.com"
+            android:textStyle="normal"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+    <de.hdodenhof.circleimageview.CircleImageView
+        android:layout_width="70dp"
+        android:layout_height="70dp"
+        android:src="@drawable/venkata"
+        android:layout_marginLeft="16dp"
+        android:layout_marginTop="38dp"
+        android:id="@+id/headerProfileImage"/>
+</RelativeLayout>

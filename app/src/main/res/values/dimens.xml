@@ -3,6 +3,7 @@
     <dimen name="activity_horizontal_margin">16dp</dimen>
     <dimen name="activity_vertical_margin">16dp</dimen>
 
-    <!--tool bar elevation property-->
+    <!--tool bar & navdrawer elevation property which gives shadow effect-->
     <dimen name="elevationToolBar">4dp</dimen>
+    <dimen name="elevationNavDrawer">7dp</dimen>
 </resources>
